@@ -59,7 +59,7 @@ logicals. If TURE, Q-Q plot would be drawn.<br>
 #### Manh
 logicals. If TURE, Q-Q plot would be drawn.<br>
 
-#### 4.Example
+# 4.Example
 
 ```
 library(OpGRbinary)

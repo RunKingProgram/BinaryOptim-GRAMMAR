@@ -1,21 +1,21 @@
-# OptimGRAMMAR_binary
+# BinaryOptim-GRAMMAR(BinaryOpGR)
 # 1. Getting started
-## 1.1	Downloading OpGRbinary
-OptimGRAMMAR_binary can be downloaded https://github.com/RunKingProgram/OptimGRAMMAR_binary
+## 1.1	Downloading BinaryOpGR
+OptimGRAMMAR_binary can be downloaded https://github.com/RunKingProgram/BinaryOptim-GRAMMAR
 . It can be installed as a regular R package.
-## 1.2	Installing OpGRbinary
-OpGRbinary links to R packages Rcpp, RcppEigen and RcppArmadillo, and also imports R packages BEDMatrix and data.table. These dependencies should be installed before installing OptimGRAMMAR_binary. In addition, OpGRbinary requires a recompiled PLINK2.0 Software (http://www.cog-genomics.org/plink/2.0/) with name “plink2offset” under your run directory. Here is an example for installing OpGRbinary and all its dependencies in an R session(assuming none of the R packages other than the default has been installed):
+## 1.2	Installing BinaryOpGR
+BinaryOpGR links to R packages Rcpp, RcppEigen and RcppArmadillo, and also imports R packages BEDMatrix and data.table. These dependencies should be installed before installing OptimGRAMMAR_binary. In addition, OpGRbinary requires a recompiled PLINK2.0 Software (http://www.cog-genomics.org/plink/2.0/) with name “plink2offset” under your run directory. Here is an example for installing OpGRbinary and all its dependencies in an R session(assuming none of the R packages other than the default has been installed):
 ```
 install.packages(c("BEDMatrix ", " data.table ", "Rcpp", " RcppEigen ", " RcppArmadillo "), repos = "https://cran.r-project.org/")
 system(“R CMD install OpGRbinary_1.0.tgz”)
 ```
 # 2. Input
-OpGRbinary requires the phenotype and genotype files in an PLINK BED data frame which also called PLINK 1 binary file and the structure of these files is described in http://www.cog-genomics.org/plink/1.9/formats#bed. How to prepare these data are describe below.
+BinaryOpGR requires the phenotype and genotype files in an PLINK BED data frame which also called PLINK 1 binary file and the structure of these files is described in http://www.cog-genomics.org/plink/1.9/formats#bed. How to prepare these data are describe below.
 ## 2.1 Phenotype
 Phenotype should place in the sixth column of “.fam” file. The missing phenotype value for quantitative traits is -9.
 ## 2.2 Genotypes
 OpGRbinary can only take genotype files in “.bed” and “.bim” format.
-# 3. Running OpGRbinary
+# 3. Running BinaryOpGR
 If OpGRbinary has been successfully installed, you can load it in an R session using:
 ```
 library(OpGRbinary)
@@ -63,7 +63,7 @@ logicals. If TURE, Q-Q plot would be drawn.<br>
 # 4.Example
 
 ```
-library(OpGRbinary)
+library(BinaryOpGR)
 library(BEDMatrix)
 library(data.table)
 pathdata<-"/Users/songyuxin/Desktop/CFWmice_binary"

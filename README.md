@@ -66,9 +66,9 @@ logicals. If TURE, Q-Q plot would be drawn.<br>
 library(BinaryOpGR)
 library(BEDMatrix)
 library(data.table)
-pathdata<-"/Users/songyuxin/Desktop/CFWmice_binary"
-setwd(pathdata)
-plinkfilename = "maize"
+
+setwd("./example")
+plinkfilename = "geno"
 gdata <- Data(plinkfilename)
 grammar <- OptimGRAMMAR_binary(gdata, Test = "Separate" , QQ = F, Manh = F)
 ```

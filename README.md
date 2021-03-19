@@ -70,5 +70,5 @@ library(data.table)
 setwd("./example")
 plinkfilename = "geno"
 gdata <- Data(plinkfilename)
-grammar <- OptimGRAMMAR_binary(gdata, Test = "Separate" , QQ = F, Manh = F)
+grammar <- OptimGRAMMAR_binary(gdata, Test = "Separate")
 ```

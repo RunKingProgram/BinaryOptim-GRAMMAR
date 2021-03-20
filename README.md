@@ -10,6 +10,8 @@ install.packages(c("BEDMatrix", "data.table", "Rcpp", "RcppEigen", "RcppArmadill
 system(“R CMD INSTALL BinaryOpGR_1.0_R4.0_MacOS.tgz”)
 ```
 # 2. Input
+Input files consist of three PLINK BED files with the same name. For example, Genotype.bed, Genotype.bim and Genotype.fam.
+
 ## 2.1 Phenotype
 Phenotype should place in the sixth column of “.fam” file. The missing phenotype value for quantitative traits is -9.
 ## 2.2 Genotype
@@ -51,7 +53,7 @@ Upper limit of polygenic heritability, which is set by default at 0.5.<br>
 #### opsm
 The total number of SNPs used for optimization, which is set by default at 50000.<br>
 #### Test
-An optional for association test, a test at once or joint analysis.<br>
+An optional for association test: a test at once or joint analysis.<br>
 #### QQ
 logicals. If TURE, Q-Q plot would be drawn.<br>
 #### Manh

@@ -6,7 +6,7 @@ BinaryOpGR can be downloaded https://github.com/RunKingProgram/BinaryOptim-GRAMM
 ## 1.2	Installing BinaryOpGR
 BinaryOpGR links to R packages Rcpp, RcppEigen and RcppArmadillo, and also imports R packages BEDMatrix and data.table. These dependencies should be installed before installing BinaryOpGR. In addition, OpGRbinary requires a recompiled PLINK2.0 Software with name “plink2ebv” under your run directory. We have tested HiRRM in CentOS 7, CentOS 7.5 ,Ubuntu 20 and Mac OS 10.15. Here is an example for installing BinaryOpGR and all its dependencies in an R session under Linux，MacOS or Windows Subsystem for Linux:
 ```
-install.packages(c("BEDMatrix", "data.table", "Rcpp", "RcppEigen", "RcppArmadillo"), repos = "https://cran.r-project.org/")
+install.packages(c("BEDMatrix", "data.table", "Rcpp", "RcppEigen", "RcppArmadillo"))
 system(“R CMD INSTALL BinaryOpGR_1.0_R4.0_MacOS.tgz”)
 ```
 # 2. Input

@@ -1,16 +1,15 @@
 # BinaryOptim-GRAMMAR(BinaryOpGR)
 # 1. Getting started
 ## 1.1	Downloading BinaryOpGR
-OptimGRAMMAR_binary can be downloaded https://github.com/RunKingProgram/BinaryOptim-GRAMMAR
+BinaryOpGR can be downloaded https://github.com/RunKingProgram/BinaryOptim-GRAMMAR
 . It can be installed as a regular R package.
 ## 1.2	Installing BinaryOpGR
-BinaryOpGR links to R packages Rcpp, RcppEigen and RcppArmadillo, and also imports R packages BEDMatrix and data.table. These dependencies should be installed before installing OptimGRAMMAR_binary. In addition, OpGRbinary requires a recompiled PLINK2.0 Software (http://www.cog-genomics.org/plink/2.0/) with name “plink2offset” under your run directory. Here is an example for installing OpGRbinary and all its dependencies in an R session(assuming none of the R packages other than the default has been installed):
+BinaryOpGR links to R packages Rcpp, RcppEigen and RcppArmadillo, and also imports R packages BEDMatrix and data.table. These dependencies should be installed before installing BinaryOpGR. In addition, OpGRbinary requires a recompiled PLINK2.0 Software with name “plink2ebv” under your run directory. We have tested HiRRM in CentOS 7, CentOS 7.5 ,Ubuntu 20 and Mac OS 10.15. Here is an example for installing BinaryOpGR and all its dependencies in an R session under Linux，MacOS or Windows Subsystem for Linux:
 ```
 install.packages(c("BEDMatrix", "data.table", "Rcpp", "RcppEigen", "RcppArmadillo"), repos = "https://cran.r-project.org/")
 system(“R CMD INSTALL BinaryOpGR_1.0_R4.0_MacOS.tgz”)
 ```
 # 2. Input
-BinaryOpGR requires the phenotype and genotype files in an PLINK BED data frame which also called PLINK 1 binary file and the structure of these files is described in http://www.cog-genomics.org/plink/1.9/formats#bed. How to prepare these data are describe below.
 ## 2.1 Phenotype
 Phenotype should place in the sixth column of “.fam” file. The missing phenotype value for quantitative traits is -9.
 ## 2.2 Genotypes

@@ -65,8 +65,8 @@ logicals. If TURE, Q-Q plot would be drawn.<br>
 There are the two outputs from the BinaryOpGR: estimated breeding values（ebv.txt）and association tests(result.PHENO1.glm.logistic). For example, result.PHENO1.glm.logistic:
 CHROM|	POS|	ID|	REF|	ALT|	A1|	TEST|	OBS_CT|	OR|	SE|	Z_STAT|	P|	ERRCODE
 ---- | ----- | ------ | ------| ------| ------| ------| ------| ------| ------| ------| ------| ------
-1|	10390|	S1_10390	|G|	A|	A|	ADD|	2648|	-0.00784112|	0.238845|	-0.0328293	|0.973813|	|.
-1|	10590|	S1_10590	|T|	A|	A|	ADD|	2648|	-0.202364|	0.249746|	-0.810281	|0.417852|	|.
+1|	10390|	S1_10390	|G|	A|	A|	ADD|	2648|	0.0784112|	0.238845|	-0.0328293	|0.973813|	|.
+1|	10590|	S1_10590	|T|	A|	A|	ADD|	2648|	0.202364|	0.249746|	-0.810281	|0.417852|	|.
 1|	128373|	S1_128373|	C|	T|	T|	ADD|	2648|	0.033819|	0.124565|	0.271498	|0.78603|	|.
 …
 # 5.Example
